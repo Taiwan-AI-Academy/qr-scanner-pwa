@@ -1,10 +1,11 @@
 const CACHE_NAME = 'qr-scanner-v1';
+const BASE = self.registration.scope;
 const ASSETS = [
-  '/',
-  '/index.html',
-  '/manifest.json',
-  '/icons/icon-192.png',
-  '/icons/icon-512.png',
+  BASE,
+  BASE + 'index.html',
+  BASE + 'manifest.json',
+  BASE + 'icons/icon-192.png',
+  BASE + 'icons/icon-512.png',
   'https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.min.js'
 ];
 
